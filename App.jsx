@@ -236,31 +236,35 @@ const App = () => {
       <div className="max-w-5xl mx-auto bg-gray-950 rounded-xl shadow-2xl overflow-hidden border border-gray-800">
         
         {/* Cabecera / Hero */}
-        <div className="bg-gradient-to-r from-gray-900 to-gray-800 p-8 border-b border-gray-800 flex flex-col md:flex-row items-center gap-6">
-          <div className="w-32 h-32 rounded-full border-4 border-emerald-500 bg-gray-800 flex items-center justify-center flex-shrink-0 overflow-hidden">
-            <img 
-              src="/myAvatar.png" 
-              alt="Esteban Zea Avatar" 
-              className="w-full h-full object-cover"
-            />
-          </div>
-          <div className="text-center md:text-left">
-            <h1 className="text-4xl font-extrabold text-white mb-2 tracking-tight">Esteban Zea</h1>
-            <div className="flex flex-wrap items-center justify-center md:justify-start gap-2 mb-3">
-              <span className="bg-cyan-900/50 text-cyan-400 px-3 py-1 rounded-full text-sm font-medium border border-cyan-800/50">
-                Analista de Ciberseguridad
-              </span>
-              <span className="text-gray-500">|</span>
-              <span className="bg-emerald-900/50 text-emerald-400 px-3 py-1 rounded-full text-sm font-medium border border-emerald-800/50">
-                Full Stack Developer
-              </span>
-            </div>
-            <p className="text-gray-400 max-w-xl text-sm">
-              Traduciendo la experiencia en atención al cliente hacia la protección de infraestructuras críticas 
-              y el desarrollo de aplicaciones web eficientes.
-            </p>
-          </div>
-        </div>
+        <div className="bg-gradient-to-r from-gray-900 to-gray-800 p-8 border-b border-gray-800 flex flex-col md:flex-row items-center gap-6">
+          <div className="w-32 h-32 rounded-full border-4 border-emerald-500 bg-gray-800 flex items-center justify-center flex-shrink-0 overflow-hidden">
+            <img 
+              src="./public/myAvatar.png" 
+              alt="Esteban Zea Avatar" 
+              className="w-full h-full object-cover"
+              onError={(e) => {
+                e.target.onerror = null; 
+                e.target.src="https://via.placeholder.com/150?text=EZ";
+              }}
+            />
+          </div>
+          <div className="text-center md:text-left">
+            <h1 className="text-4xl font-extrabold text-white mb-2 tracking-tight">Esteban Zea</h1>
+            <div className="flex flex-wrap items-center justify-center md:justify-start gap-2 mb-3">
+              <span className="bg-cyan-900/50 text-cyan-400 px-3 py-1 rounded-full text-sm font-medium border border-cyan-800/50">
+                Analista de Ciberseguridad
+              </span>
+              <span className="text-gray-500">|</span>
+              <span className="bg-emerald-900/50 text-emerald-400 px-3 py-1 rounded-full text-sm font-medium border border-emerald-800/50">
+                Full Stack Developer
+              </span>
+            </div>
+            <p className="text-gray-400 max-w-xl text-sm">
+              Traduciendo la experiencia en atención al cliente hacia la protección de infraestructuras críticas 
+              y el desarrollo de aplicaciones web eficientes.
+            </p>
+          </div>
+        </div>
 
         {/* Contenido Principal */}
         <div className="flex flex-col md:flex-row">
