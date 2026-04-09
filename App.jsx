@@ -239,7 +239,11 @@ const App = () => {
         <div className="bg-gradient-to-r from-gray-900 to-gray-800 p-8 border-b border-gray-800 flex flex-col md:flex-row items-center gap-6">
           <div className="w-32 h-32 rounded-full border-4 border-emerald-500 bg-gray-800 flex items-center justify-center flex-shrink-0 overflow-hidden">
             <User size={64} className="text-gray-500" />
-            {/* Aquí luego puedes poner una etiqueta <img src="tu-foto.jpg" /> */}
+            <img 
+              src="/myAvatar.png" 
+              alt="Esteban Zea Avatar" 
+              className="w-full h-full object-cover"
+            />
           </div>
           <div className="text-center md:text-left">
             <h1 className="text-4xl font-extrabold text-white mb-2 tracking-tight">Esteban Zea</h1>
