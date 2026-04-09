@@ -28,16 +28,31 @@ const App = () => {
               gestión de crisis y comunicación efectiva. Ahora, aplico esta mentalidad analítica para proteger infraestructuras 
               como Analista de Ciberseguridad y para construir soluciones robustas como Desarrollador Front y Backend.
             </p>
-            <div className="flex gap-4 mt-6">
-              <button className="flex items-center gap-2 bg-gray-800 hover:bg-gray-700 text-white px-4 py-2 rounded border border-gray-600 transition-colors">
+            <div className="flex flex-wrap gap-4 mt-6">
+              <a 
+                href="https://github.com/estebanzeaalvarez" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 bg-gray-800 hover:bg-gray-700 text-white px-4 py-2 rounded border border-gray-600 transition-colors"
+              >
                 <Github size={18} /> GitHub
-              </button>
-              <button className="flex items-center gap-2 bg-gray-800 hover:bg-gray-700 text-white px-4 py-2 rounded border border-gray-600 transition-colors">
+              </a>
+              <a 
+                href="https://www.linkedin.com/in/esteban-zea-alvarez" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 bg-gray-800 hover:bg-gray-700 text-white px-4 py-2 rounded border border-gray-600 transition-colors"
+              >
                 <Linkedin size={18} /> LinkedIn
-              </button>
-              <button className="flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white px-4 py-2 rounded transition-colors">
-                <Mail size={18} /> Email
-              </button>
+              </a>
+              <a 
+                href="https://wa.me/573135320094" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white px-4 py-2 rounded transition-colors"
+              >
+                <Mail size={18} /> WhatsApp
+              </a>
             </div>
           </div>
         );
