@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Shield, Code, Terminal, User, Briefcase, Award, ChevronRight, Github, Mail, Linkedin, ExternalLink } from 'lucide-react';
+import { Shield, Code, Terminal, User, Briefcase, Award, ChevronRight, Github, MessageCircle, Linkedin, ExternalLink } from 'lucide-react';
 
 const App = () => {
   const [activeTab, setActiveTab] = useState('about');
@@ -51,7 +51,7 @@ const App = () => {
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 bg-emerald-600 hover:bg-emerald-500 text-white px-4 py-2 rounded transition-colors"
               >
-                <Mail size={18} /> WhatsApp
+                <MessageCircle size={18} /> WhatsApp
               </a>
             </div>
           </div>
